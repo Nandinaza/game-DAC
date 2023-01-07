@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scene/Mainmenu/pilih_level/button_on_press.tres" type="StyleBox" id=1]
+[ext_resource path="res://scene/Mainmenu/pilih_level/butto _on_normal.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/background/testbg.png" type="Texture" id=3]
+
+[node name="level_selection" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 87.0
+margin_top = -14.0
+margin_right = 87.0
+margin_bottom = -14.0
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
+margin_left = 509.0
+margin_top = 285.0
+margin_right = 770.0
+margin_bottom = 435.0
+columns = 3
+
+[node name="Button" type="Button" parent="CenterContainer/GridContainer"]
+margin_right = 99.0
+margin_bottom = 73.9175
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "     level1          "
+
+[node name="Button2" type="Button" parent="CenterContainer/GridContainer"]
+margin_left = 103.0
+margin_right = 180.0
+margin_bottom = 73.9175
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "level2"
+
+[node name="Button3" type="Button" parent="CenterContainer/GridContainer"]
+margin_left = 184.0
+margin_right = 261.0
+margin_bottom = 73.9175
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "level3"
+
+[node name="Button4" type="Button" parent="CenterContainer/GridContainer"]
+margin_top = 77.0
+margin_right = 99.0
+margin_bottom = 150.918
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "level4"
+
+[node name="Button5" type="Button" parent="CenterContainer/GridContainer"]
+margin_left = 103.0
+margin_top = 77.0
+margin_right = 180.0
+margin_bottom = 150.918
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "tombol satu"
+
+[node name="Button6" type="Button" parent="CenterContainer/GridContainer"]
+margin_left = 184.0
+margin_top = 77.0
+margin_right = 261.0
+margin_bottom = 150.918
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "tombol satu"

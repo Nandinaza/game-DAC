@@ -41,4 +41,5 @@ centered = false
 
 [node name="Tween" type="Tween" parent="."]
 
+[connection signal="pressed" from="Sprite/play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Sprite/exit" to="." method="_on_exit_pressed"]

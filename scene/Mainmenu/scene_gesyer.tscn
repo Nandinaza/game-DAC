@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/Mainmenu/exit_on.png" type="Texture" id=5]
 [ext_resource path="res://assets/Mainmenu/play_on.png" type="Texture" id=6]
 [ext_resource path="res://assets/Mainmenu/settings_off.png" type="Texture" id=7]
-[ext_resource path="res://scene/Mainmenu/scene_gesyer.gd" type="Script" id=8]
+[ext_resource path="res://script/mainmenu/scene_gesyer.gd" type="Script" id=8]
 
 [node name="mainan" type="Node2D"]
 script = ExtResource( 8 )

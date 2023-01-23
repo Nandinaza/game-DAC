@@ -4,7 +4,7 @@
 [ext_resource path="res://script/player_movement/Azmi_platformer.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 31.5, 46.5 )
+extents = Vector2( 28, 51.5 )
 
 [sub_resource type="AtlasTexture" id=16]
 flags = 4
@@ -78,12 +78,11 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 8.5, 9.5 )
+position = Vector2( 12, 14.5 )
 shape = SubResource( 15 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 13, -8 )
 frames = SubResource( 14 )
 animation = "idle"
-frame = 3
 playing = true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/99.9_-_MOB_PSYCHO_100_OP_2_(Cover_by_RichaadEB_&_@Lollia)(128k).mp3-9c787fabd7d51f2dc0c9e3224c6d8eb0.mp3str"
+
+[deps]
+
+source_file="res://music/background_music/99.9_-_MOB_PSYCHO_100_OP_2_(Cover_by_RichaadEB_&_@Lollia)(128k).mp3"
+dest_files=[ "res://.import/99.9_-_MOB_PSYCHO_100_OP_2_(Cover_by_RichaadEB_&_@Lollia)(128k).mp3-9c787fabd7d51f2dc0c9e3224c6d8eb0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

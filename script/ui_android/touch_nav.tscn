@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/button/juoystick/button_normal.png" type="Texture" id=1]
+[ext_resource path="res://assets/button/juoystick/button_press.png" type="Texture" id=2]
+[ext_resource path="res://assets/button/juoystick/joystick.png" type="Texture" id=3]
+
+[node name="layout" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="kanan" type="TouchScreenButton" parent="."]
+position = Vector2( 282, 490 )
+scale = Vector2( 1.8, 1.8 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 2 )
+
+[node name="kiri" type="TouchScreenButton" parent="."]
+position = Vector2( 227, 499 )
+scale = Vector2( -1.8, 1.8 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 2 )
+
+[node name="loncat" type="TouchScreenButton" parent="."]
+position = Vector2( 1042, 507 )
+scale = Vector2( 1.57, 1.52 )
+normal = ExtResource( 3 )

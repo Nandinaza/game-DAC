@@ -12,4 +12,4 @@ func _on_exit_pressed():
 
 
 func _on_play_pressed():
-	get_tree().change_scene("res://scene/Mainmenu/pilih_level/level_selection.tscn")
+	get_tree().change_scene("res://scene/pilih_level/level_selection.tscn")

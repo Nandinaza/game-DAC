@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Monkeys_Spinning_Monkeys_(Kevin_MacLeod)_-_Gaming_Background_Music_(HD)(128k).mp3-06a2b64d9ed3c65c6c0705862fd9e621.mp3str"
+
+[deps]
+
+source_file="res://music/background_music/Monkeys_Spinning_Monkeys_(Kevin_MacLeod)_-_Gaming_Background_Music_(HD)(128k).mp3"
+dest_files=[ "res://.import/Monkeys_Spinning_Monkeys_(Kevin_MacLeod)_-_Gaming_Background_Music_(HD)(128k).mp3-06a2b64d9ed3c65c6c0705862fd9e621.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

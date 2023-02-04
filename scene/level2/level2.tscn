@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://script/player_movement/Azmi_platformer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://script/levels/level2/level2.gd" type="Script" id=4]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="kine" parent="." instance=ExtResource( 3 )]
+position = Vector2( 743, 405 )
+collision_mask = 30
+
+[node name="AnimatedSprite" parent="kine" index="1"]
+frame = 4
+
+[node name="Camera2D" type="Camera2D" parent="kine"]
+position = Vector2( -743, -405 )
+offset = Vector2( 640, 360 )
+current = true
+
+[node name="Icon" type="Sprite" parent="."]
+position = Vector2( 177, 466 )
+scale = Vector2( 4.5, 4.29688 )
+texture = ExtResource( 2 )
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 1332, 576 )
+
+[editable path="kine"]

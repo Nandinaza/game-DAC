@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 622.5, 59 )
+
+[node name="tanah" type="Node2D"]
+
+[node name="Area_1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_1"]
+position = Vector2( 625, 71 )
+shape = SubResource( 1 )
+
+[node name="Area_2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_2"]
+position = Vector2( 625, 208 )
+shape = SubResource( 1 )
+
+[node name="Area_3" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_3"]
+position = Vector2( 625, 356 )
+shape = SubResource( 1 )
+
+[node name="Area_4" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_4"]
+position = Vector2( 625, 497 )
+shape = SubResource( 1 )
+
+[node name="Area_5" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_5"]
+position = Vector2( 625, 639 )
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="Area_1" to="." method="_on_Area_1_body_entered"]
+[connection signal="body_entered" from="Area_2" to="." method="_on_Area_2_body_entered"]
+[connection signal="body_entered" from="Area_3" to="." method="_on_Area_3_body_entered"]
+[connection signal="body_entered" from="Area_4" to="." method="_on_Area_4_body_entered"]
+[connection signal="body_entered" from="Area_5" to="." method="_on_Area_5_body_entered"]

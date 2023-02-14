@@ -1,0 +1,54 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/dialog/dialog_box2.png" type="Texture" id=1]
+[ext_resource path="res://assets/dialog/Lato-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://script/levels/level2/dialog_lv2.gd" type="Script" id=3]
+[ext_resource path="res://assets/background/BG Image.png" type="Texture" id=4]
+[ext_resource path="res://assets/dialog/potrait/Azmi_sad_icon.png" type="Texture" id=5]
+[ext_resource path="res://assets/Mainmenu/next_Button.png" type="Texture" id=6]
+[ext_resource path="res://music/background_music/Monkeys_Spinning_Monkeys_(Kevin_MacLeod)_-_Gaming_Background_Music_(HD)(128k).mp3" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+font_data = ExtResource( 2 )
+
+[node name="prologue" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="backround" type="Sprite" parent="."]
+scale = Vector2( 3.35677, 5.57812 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="muka_karakter_1" type="Sprite" parent="."]
+position = Vector2( 93, 136 )
+scale = Vector2( 0.518229, 0.477865 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="dialog_png" type="Sprite" parent="."]
+position = Vector2( 75, 220 )
+scale = Vector2( 2, 1.5 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 118.0
+margin_top = 464.0
+margin_right = 1162.0
+margin_bottom = 646.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "helo guys"
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="lanjut" type="TouchScreenButton" parent="."]
+position = Vector2( 1049, 590 )
+normal = ExtResource( 6 )
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
+
+[connection signal="pressed" from="lanjut" to="." method="_on_lanjut_pressed"]

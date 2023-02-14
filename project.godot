@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "dialog_logic",
+"language": "GDScript",
+"path": "res://scene/dialog/dialog_logic.gd"
+} ]
+_global_script_class_icons={
+"dialog_logic": ""
+}
+
 [application]
 
 config/name="Game DAC"

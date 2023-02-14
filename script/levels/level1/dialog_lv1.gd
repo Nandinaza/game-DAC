@@ -69,7 +69,7 @@ func load_dialog(parameter,sprite1,sprite2):
 
 func _on_lanjut_pressed():
 	index += 1
-	if(index == data.size()):
+	if(index >= data.size()):
 		get_tree().change_scene("res://scene/level1/level1.tscn")
 	else:
 		match(index):

@@ -11,7 +11,7 @@ func _physics_process(_delta):
 		pergerakan.x -= 70;
 	if(Input.is_action_pressed("ui_accept") and is_on_floor()):
 		pergerakan.y -= 499;
-		
+	
 	pergerakan.x = lerp(pergerakan.x,0,0.2)
 	pergerakan = move_and_slide(pergerakan,Vector2.UP)
 	
@@ -41,3 +41,4 @@ func _on_zona_jatuh_body_entered(body):
 func _on_finish_body_entered(body):
 	if(body.name == "kine"):
 		get_tree().change_scene("res://scene/win_and_defeat/normal_win.tscn")
+

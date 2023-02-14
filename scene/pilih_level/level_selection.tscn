@@ -86,3 +86,4 @@ custom_styles/normal = ExtResource( 3 )
 text = "tombol satu"
 
 [connection signal="pressed" from="CenterContainer/GridContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Button2" to="." method="_on_Button2_pressed"]
